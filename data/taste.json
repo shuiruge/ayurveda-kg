@@ -1,0 +1,44 @@
+{
+    "taste:sweet": {
+        "component": [
+            "element:earth",
+            "element:water"
+        ],
+        "attribute": "cooling"
+    },
+    "taste:sour": {
+        "component": [
+            "element:earth",
+            "element:fire"
+        ],
+        "attribute": "heating"
+    },
+    "taste:salty": {
+        "component": [
+            "element:water",
+            "element:fire"
+        ],
+        "attribute": "heating"
+    },
+    "taste:pungent": {
+        "component": [
+            "element:air",
+            "element:fire"
+        ],
+        "attribute": "heating"
+    },
+    "taste:bitter": {
+        "component": [
+            "element:ether",
+            "element:air"
+        ],
+        "attribute": "cooling"
+    },
+    "taste:astringent": {
+        "component": [
+            "element:earth",
+            "element:air"
+        ],
+        "attribute": "cooling"
+    }
+}

@@ -11,5 +11,6 @@ pkgs.mkShell rec {
     # Python libraries
     python3Packages.spacy
     python3Packages.flask
+    python3Packages.jupyter
   ];
 }

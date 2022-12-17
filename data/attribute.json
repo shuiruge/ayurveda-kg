@@ -1,0 +1,45 @@
+{
+    "attribute:heavy": {
+        "increase": [
+            "dosha:kapha"
+        ],
+        "decrease": [
+            "dosha:vata",
+            "dosha:pitta"
+        ],
+        "create": [
+            "dullness",
+            "lethargy"
+        ]
+    },
+    "attribute:light": {
+        "increase": [
+            "dosha:vata",
+            "dosha:pitta",
+            "agni"
+        ],
+        "decrease": [
+            "kapha"
+        ],
+        "create": [
+            "freshness",
+            "alertness"
+        ]
+    },
+    "attribute:slow": {
+        "increase": [
+            "dosha:kapha"
+        ],
+        "decrease": [
+            "dosha:vata",
+            "dosha:pitta"
+        ],
+        "create": [
+            "sluggishness",
+            "relaxation",
+            "dullness"
+        ]
+    }
+
+
+}

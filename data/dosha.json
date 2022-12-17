@@ -1,0 +1,58 @@
+{
+    "dosha:vata": {
+        "component": [
+            "element:ether",
+            "element:air"
+        ],
+        "function": [
+            "movement",
+            "breathing",
+            "natural urges",
+            "transformation of tissue",
+            "motor functions",
+            "sensory functions",
+            "secretions",
+            "excretion",
+            "fear",
+            "emptyness",
+            "anxiety",
+            "igniting agni",
+            "supporting memory"
+        ]
+    },
+    "dosha:pitta": {
+        "component": [
+            "element:fire",
+            "element:water"
+        ],
+        "function": [
+            "body heat",
+            "temperature",
+            "digestion",
+            "hunger",
+            "thirst",
+            "intelligence",
+            "self-confidence",
+            "anger",
+            "hate",
+            "jealous",
+            "fueling agni",
+            "providing blood",
+            "coloring skin"
+        ]
+    },
+    "dosha:kapha": {
+        "component": [
+            "element:water",
+            "element:earth"
+        ],
+        "function": [
+            "moisturizing food",
+            "lubricating joints",
+            "forgiveness",
+            "greed",
+            "attachment",
+            "accumulation"
+        ]
+    }
+}
