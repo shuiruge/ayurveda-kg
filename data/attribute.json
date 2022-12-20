@@ -1,24 +1,24 @@
 {
-    "attribute:heavy": {
-        "increase": [
-            "dosha:kapha"
+    "heavy": {
+        "elevate": [
+            "kapha"
         ],
-        "decrease": [
-            "dosha:vata",
-            "dosha:pitta"
+        "pacify": [
+            "vata",
+            "pitta"
         ],
         "create": [
             "dullness",
             "lethargy"
         ]
     },
-    "attribute:light": {
-        "increase": [
-            "dosha:vata",
-            "dosha:pitta",
+    "light": {
+        "elevate": [
+            "vata",
+            "pitta",
             "agni"
         ],
-        "decrease": [
+        "pacify": [
             "kapha"
         ],
         "create": [
@@ -26,20 +26,35 @@
             "alertness"
         ]
     },
-    "attribute:slow": {
-        "increase": [
-            "dosha:kapha"
+    "slow": {
+        "elevate": [
+            "kapha"
         ],
-        "decrease": [
-            "dosha:vata",
-            "dosha:pitta"
+        "pacify": [
+            "vata",
+            "pitta"
         ],
         "create": [
             "sluggishness",
             "relaxation",
             "dullness"
         ]
-    }
-
-
+    },
+    "sharp": {},
+    "cold": {},
+    "hot": {},
+    "oily": {},
+    "dry": {},
+    "slimy": {},
+    "rough": {},
+    "dense": {},
+    "liquid": {},
+    "soft": {},
+    "hard": {},
+    "static": {},
+    "mobile": {},
+    "subtle": {},
+    "gross": {},
+    "cloudy": {},
+    "clear": {}
 }

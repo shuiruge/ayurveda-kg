@@ -2,6 +2,10 @@
     "cSpell.words": [
         "dosha",
         "kapha",
-        "vata"
-    ]
+        "rasa",
+        "vata",
+        "vipak",
+        "virya"
+    ],
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix"
 }

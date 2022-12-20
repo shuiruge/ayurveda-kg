@@ -1,0 +1,88 @@
+{
+    "beef": {
+        "taste": [
+            "sweet"
+        ],
+        "heating_or_cooling": [
+            "heating"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "attribute": [
+            "heavy",
+            "thick"
+        ],
+        "elevate": [
+            "pitta",
+            "kapha"
+        ],
+        "pacify": [
+            "vata"
+        ]
+    },
+    "chicken": {
+        "taste": [
+            "sweet",
+            "astringent"
+        ],
+        "heating_or_cooling": [
+            "heating"
+        ],
+        "postdigestive_taste": [
+            "pungent"
+        ],
+        "attribute": [
+            "light",
+            "oily"
+        ],
+        "elevate": [
+        ],
+        "pacify": [
+        ]
+    },
+    "fish": {
+        "taste": [
+            "sweet"
+        ],
+        "heating_or_cooling": [
+            "heating"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "attribute": [
+            "heavy",
+            "oily"
+        ],
+        "elevate": [
+            "pitta",
+            "kapha"
+        ],
+        "pacify": [
+            "vata"
+        ]
+    },
+    "lamb": {
+        "taste": [
+            "sweet",
+            "astringent"
+        ],
+        "heating_or_cooling": [
+            "heating"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "attribute": [
+            "heavy"
+        ],
+        "elevate": [
+            "vata",
+            "pitta",
+            "kapha"
+        ],
+        "pacify": [
+        ]
+    }
+}

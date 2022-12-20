@@ -1,8 +1,8 @@
 {
-    "dosha:vata": {
+    "vata": {
         "component": [
-            "element:ether",
-            "element:air"
+            "ether",
+            "air"
         ],
         "function": [
             "movement",
@@ -14,16 +14,28 @@
             "secretions",
             "excretion",
             "fear",
-            "emptyness",
+            "emptiness",
             "anxiety",
             "igniting agni",
             "supporting memory"
+        ],
+        "elevated": [
+            "lack of concentration",
+            "sleeplessness",
+            "sensitivity",
+            "exhaustion",
+            "strong intolerance to cold",
+            "restlessness",
+            "muscular tension",
+            "constipation",
+            "cravings for sweet, salty, or sour food",
+            "stiffness or pain in the joints"
         ]
     },
-    "dosha:pitta": {
+    "pitta": {
         "component": [
-            "element:fire",
-            "element:water"
+            "fire",
+            "water"
         ],
         "function": [
             "body heat",
@@ -39,12 +51,26 @@
             "fueling agni",
             "providing blood",
             "coloring skin"
+        ],
+        "elevated": [
+            "irritation",
+            "prone to judge",
+            "overly competitive behavior",
+            "strong intolerance for heat",
+            "burning sensations (especially in the eyes)",
+            "red face",
+            "sensitivity to bright light",
+            "excessive thirst or hunger",
+            "loose",
+            "more sweating",
+            "cravings for sweet and cold food",
+            "heart burn"
         ]
     },
-    "dosha:kapha": {
+    "kapha": {
         "component": [
-            "element:water",
-            "element:earth"
+            "water",
+            "earth"
         ],
         "function": [
             "moisturizing food",
@@ -53,6 +79,20 @@
             "greed",
             "attachment",
             "accumulation"
+        ],
+        "elevated": [
+            "lack of mental clarity",
+            "strong attachment",
+            "excessively cold skin",
+            "loss of appetite",
+            "reduced sense of taste and smell",
+            "weight gain",
+            "heaviness",
+            "sluggishness",
+            "lethargy",
+            "oily scalp and dandruff",
+            "blocked sinuses",
+            "colds with productive cough"
         ]
     }
 }

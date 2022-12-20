@@ -1,44 +1,38 @@
 {
-    "taste:sweet": {
+    "sweet": {
         "component": [
-            "element:earth",
-            "element:water"
-        ],
-        "attribute": "cooling"
+            "earth",
+            "water"
+        ]
     },
-    "taste:sour": {
+    "sour": {
         "component": [
-            "element:earth",
-            "element:fire"
-        ],
-        "attribute": "heating"
+            "earth",
+            "fire"
+        ]
     },
-    "taste:salty": {
+    "salty": {
         "component": [
-            "element:water",
-            "element:fire"
-        ],
-        "attribute": "heating"
+            "water",
+            "fire"
+        ]
     },
-    "taste:pungent": {
+    "pungent": {
         "component": [
-            "element:air",
-            "element:fire"
-        ],
-        "attribute": "heating"
+            "air",
+            "fire"
+        ]
     },
-    "taste:bitter": {
+    "bitter": {
         "component": [
-            "element:ether",
-            "element:air"
-        ],
-        "attribute": "cooling"
+            "ether",
+            "air"
+        ]
     },
-    "taste:astringent": {
+    "astringent": {
         "component": [
-            "element:earth",
-            "element:air"
-        ],
-        "attribute": "cooling"
+            "earth",
+            "air"
+        ]
     }
 }
