@@ -1,0 +1,11 @@
+{
+    "skin is dry, cracked, and rough": {
+        "hints for elevation": "vata"
+    },
+    "skin is red, excessively hot, or sensitive with rashes": {
+        "hints for elevation": "pitta"
+    },
+    "skin is pale, excessively cold, or clammy": {
+        "hints for elevation": "kapha"
+    }
+}
