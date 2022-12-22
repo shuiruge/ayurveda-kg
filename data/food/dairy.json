@@ -1,17 +1,41 @@
 {
-    "beef": {
+    "butter": {
         "taste": [
-            "sweet"
+            "sweet",
+            "astringent"
         ],
         "heating_or_cooling": [
-            "heating"
+            "cooling"
         ],
         "postdigestive_taste": [
             "sweet"
         ],
         "has attribute": [
             "heavy",
-            "dense"
+            "slimy"
+        ],
+        "elevates": [
+            "kapha"
+        ],
+        "pacifies": [
+            "vata",
+            "pitta"
+        ]
+    },
+    "cheese": {
+        "taste": [
+            "sweet",
+            "sour"
+        ],
+        "heating_or_cooling": [
+            "cooling"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "has attribute": [
+            "heavy",
+            "slimy"
         ],
         "elevates": [
             "pitta",
@@ -21,35 +45,39 @@
             "vata"
         ]
     },
-    "chicken": {
+    "cow's milk": {
+        "taste": [
+            "sweet"
+        ],
+        "heating_or_cooling": [
+            "cooling"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "has attribute": [
+            "light",
+            "oily",
+            "slimy"
+        ],
+        "elevates": [
+            "kapha"
+        ],
+        "pacifies": [
+            "vata",
+            "pitta"
+        ]
+    },
+    "egg": {
         "taste": [
             "sweet",
             "astringent"
         ],
         "heating_or_cooling": [
-            "heating"
+            "cooling"
         ],
         "postdigestive_taste": [
             "pungent"
-        ],
-        "has attribute": [
-            "light",
-            "oily"
-        ],
-        "elevates": [
-        ],
-        "pacifies": [
-        ]
-    },
-    "fish": {
-        "taste": [
-            "sweet"
-        ],
-        "heating_or_cooling": [
-            "heating"
-        ],
-        "postdigestive_taste": [
-            "sweet"
         ],
         "has attribute": [
             "heavy",
@@ -64,67 +92,42 @@
             "vata"
         ]
     },
-    "lamb": {
+    "ghee": {
         "taste": [
-            "sweet",
-            "astringent"
+            "sweet"
         ],
         "heating_or_cooling": [
-            "heating"
+            "cooling"
         ],
         "postdigestive_taste": [
             "sweet"
         ],
         "has attribute": [
-            "heavy"
-        ],
-        "elevates": [
-            "vata",
-            "pitta",
-            "kapha"
-        ],
-        "pacifies": [
-        ]
-    },
-    "pork": {
-        "taste": [
-            "sweet",
-            "astringent"
-        ],
-        "heating_or_cooling": [
-            "heating"
-        ],
-        "postdigestive_taste": [
-            "sweet"
-        ],
-        "has attribute": [
-            "heavy",
+            "light",
             "oily",
             "slimy"
         ],
         "elevates": [
-            "vata",
-            "pitta",
             "kapha"
         ],
         "pacifies": [
+            "vata",
+            "pitta"
         ]
     },
-    "rabbit": {
+    "coat's milk": {
         "taste": [
             "sweet",
             "astringent"
         ],
         "heating_or_cooling": [
-            "heating"
+            "cooling"
         ],
         "postdigestive_taste": [
-            "pungent"
+            "sweet"
         ],
         "has attribute": [
-            "light",
-            "dry",
-            "rough"
+            "light"
         ],
         "elevates": [
             "vata"
@@ -132,6 +135,52 @@
         "pacifies": [
             "pitta",
             "kapha"
+        ]
+    },
+    "mother's milk": {
+        "taste": [
+            "sweet"
+        ],
+        "heating_or_cooling": [
+            "cooling"
+        ],
+        "postdigestive_taste": [
+            "sweet"
+        ],
+        "has attribute": [
+            "light",
+            "oily",
+            "slimy"
+        ],
+        "elevates": [
+        ],
+        "pacifies": [
+            "vata",
+            "pitta",
+            "kapha"
+        ]
+    },
+    "yogurt": {
+        "taste": [
+            "sour",
+            "astringent"
+        ],
+        "heating_or_cooling": [
+            "heating"
+        ],
+        "postdigestive_taste": [
+            "sour"
+        ],
+        "has attribute": [
+            "oily",
+            "slimy"
+        ],
+        "elevates": [
+            "pitta",
+            "kapha"
+        ],
+        "pacifies": [
+            "vata"
         ]
     }
 }
