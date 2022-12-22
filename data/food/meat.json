@@ -9,15 +9,15 @@
         "postdigestive_taste": [
             "sweet"
         ],
-        "attribute": [
+        "has attribute": [
             "heavy",
             "thick"
         ],
-        "elevate": [
+        "elevates": [
             "pitta",
             "kapha"
         ],
-        "pacify": [
+        "pacifies": [
             "vata"
         ]
     },
@@ -32,13 +32,13 @@
         "postdigestive_taste": [
             "pungent"
         ],
-        "attribute": [
+        "has attribute": [
             "light",
             "oily"
         ],
-        "elevate": [
+        "elevates": [
         ],
-        "pacify": [
+        "pacifies": [
         ]
     },
     "fish": {
@@ -51,15 +51,15 @@
         "postdigestive_taste": [
             "sweet"
         ],
-        "attribute": [
+        "has attribute": [
             "heavy",
             "oily"
         ],
-        "elevate": [
+        "elevates": [
             "pitta",
             "kapha"
         ],
-        "pacify": [
+        "pacifies": [
             "vata"
         ]
     },
@@ -74,15 +74,15 @@
         "postdigestive_taste": [
             "sweet"
         ],
-        "attribute": [
+        "has attribute": [
             "heavy"
         ],
-        "elevate": [
+        "elevates": [
             "vata",
             "pitta",
             "kapha"
         ],
-        "pacify": [
+        "pacifies": [
         ]
     }
 }

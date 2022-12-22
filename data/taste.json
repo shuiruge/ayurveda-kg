@@ -1,36 +1,36 @@
 {
     "sweet": {
-        "component": [
+        "has component": [
             "earth",
             "water"
         ]
     },
     "sour": {
-        "component": [
+        "has component": [
             "earth",
             "fire"
         ]
     },
     "salty": {
-        "component": [
+        "has component": [
             "water",
             "fire"
         ]
     },
     "pungent": {
-        "component": [
+        "has component": [
             "air",
             "fire"
         ]
     },
     "bitter": {
-        "component": [
+        "has component": [
             "ether",
             "air"
         ]
     },
     "astringent": {
-        "component": [
+        "has component": [
             "earth",
             "air"
         ]

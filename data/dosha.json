@@ -1,10 +1,10 @@
 {
     "vata": {
-        "component": [
+        "has component": [
             "ether",
             "air"
         ],
-        "function": [
+        "has function": [
             "movement",
             "breathing",
             "natural urges",
@@ -18,26 +18,14 @@
             "anxiety",
             "igniting agni",
             "supporting memory"
-        ],
-        "elevated": [
-            "lack of concentration",
-            "sleeplessness",
-            "sensitivity",
-            "exhaustion",
-            "strong intolerance to cold",
-            "restlessness",
-            "muscular tension",
-            "constipation",
-            "cravings for sweet, salty, or sour food",
-            "stiffness or pain in the joints"
         ]
     },
     "pitta": {
-        "component": [
+        "has component": [
             "fire",
             "water"
         ],
-        "function": [
+        "has function": [
             "body heat",
             "temperature",
             "digestion",
@@ -51,48 +39,20 @@
             "fueling agni",
             "providing blood",
             "coloring skin"
-        ],
-        "elevated": [
-            "irritation",
-            "prone to judge",
-            "overly competitive behavior",
-            "strong intolerance for heat",
-            "burning sensations (especially in the eyes)",
-            "red face",
-            "sensitivity to bright light",
-            "excessive thirst or hunger",
-            "loose",
-            "more sweating",
-            "cravings for sweet and cold food",
-            "heart burn"
         ]
     },
     "kapha": {
-        "component": [
+        "has component": [
             "water",
             "earth"
         ],
-        "function": [
+        "has function": [
             "moisturizing food",
             "lubricating joints",
             "forgiveness",
             "greed",
             "attachment",
             "accumulation"
-        ],
-        "elevated": [
-            "lack of mental clarity",
-            "strong attachment",
-            "excessively cold skin",
-            "loss of appetite",
-            "reduced sense of taste and smell",
-            "weight gain",
-            "heaviness",
-            "sluggishness",
-            "lethargy",
-            "oily scalp and dandruff",
-            "blocked sinuses",
-            "colds with productive cough"
         ]
     }
 }

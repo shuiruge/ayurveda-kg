@@ -1,40 +1,40 @@
 {
     "heavy": {
-        "elevate": [
+        "elevates": [
             "kapha"
         ],
-        "pacify": [
+        "pacifies": [
             "vata",
             "pitta"
         ],
-        "create": [
+        "creates": [
             "dullness",
             "lethargy"
         ]
     },
     "light": {
-        "elevate": [
+        "elevates": [
             "vata",
             "pitta",
             "agni"
         ],
-        "pacify": [
+        "pacifies": [
             "kapha"
         ],
-        "create": [
+        "creates": [
             "freshness",
             "alertness"
         ]
     },
     "slow": {
-        "elevate": [
+        "elevates": [
             "kapha"
         ],
-        "pacify": [
+        "pacifies": [
             "vata",
             "pitta"
         ],
-        "create": [
+        "creates": [
             "sluggishness",
             "relaxation",
             "dullness"
