@@ -20,9 +20,11 @@ class Symptom:
 class DataCollector:
 
     def select(self, items: List[str]) -> str:
+        # TODO: Implement this.
         return NotImplemented
 
     def rate(self, items: List[str]) -> List[float]:
+        # TODO: Implement this.
         return NotImplemented
 
 
@@ -67,7 +69,7 @@ class Ayurveda:
     def diagnose(self) -> None:
         dosha_scores: Dict[Entity, float] = defaultdict(float)
         for symptom in self._symptoms:
-            elevated_doshas = self._kg.exact_search(
+            elevated_doshas = self._kg.fuzzy_search(
                 head=symptom.description,
                 relation='hints for elevation',
             )
@@ -88,7 +90,7 @@ class Ayurveda:
     def _get_food_for_dosha(self, dosha: Entity):
         all_food = self._kg.get_objects('food')
         food_for_dosha: Set[Entity] = set()
-        for fact in self.facts:
+        for fact in self._kg.facts:
             if (
                 fact.head in all_food and
                 fact.relation.is_like('pacifies') and

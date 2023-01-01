@@ -140,6 +140,9 @@ class KnowledgeGraph:
                      head: Optional[Entity],
                      relation: Optional[Relation],
                      tail: Optional[Entity]):
+        """Comparing with fuzzy search, exact search is much faster,
+        especially when there's lots of facts.
+        """
         results: Set[Fact] = set()
         if head:
             results = self.get_facts_by_head(head)
@@ -159,9 +162,17 @@ class KnowledgeGraph:
     def fuzzy_search(self,
                      head: Optional[Entity],
                      relation: Optional[Relation],
-                     tail: Optional[Entity]) -> Set[Fact]:
-        # TODO: Implement this.
-        return NotImplemented
+                     tail: Optional[Entity]):
+        results: Set[Fact] = set()
+        for fact in self.facts:
+            if head and not fact.head.is_like(head):
+                continue
+            if relation and not fact.relation.is_like(relation):
+                continue
+            if tail and not fact.tail.is_like(tail):
+                continue
+            results.add(fact)
+        return results
 
     def get_objects(self, category: Union[Entity, str]):
         if isinstance(category, str):
