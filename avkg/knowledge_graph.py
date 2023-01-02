@@ -21,9 +21,12 @@ class Entity:
     def __str__(self):
         return self.name
 
-    def is_like(self, name: str):
+    def is_like(self, other):
         # TODO: Temporal implementation without NLP.
-        return self.name == name
+        if isinstance(other, Entity):
+            return self.name == other.name
+        else:
+            return self.name == other
 
 
 class Relation:
@@ -43,9 +46,13 @@ class Relation:
     def __str__(self):
         return self.name
 
-    def is_like(self, name: str):
+    def is_like(self, other):
         # TODO: Temporal implementation without NLP.
-        return self.name == name
+        if isinstance(other, Entity):
+            return self.name == other.name
+        else:
+            return self.name == other
+
 
 
 class Fact:
@@ -137,9 +144,9 @@ class KnowledgeGraph:
         return self
 
     def exact_search(self,
-                     head: Optional[Entity],
-                     relation: Optional[Relation],
-                     tail: Optional[Entity]):
+                     head: Optional[Entity] = None,
+                     relation: Optional[Relation] = None,
+                     tail: Optional[Entity] = None):
         """Comparing with fuzzy search, exact search is much faster,
         especially when there's lots of facts.
         """
@@ -160,9 +167,9 @@ class KnowledgeGraph:
         return results
 
     def fuzzy_search(self,
-                     head: Optional[Entity],
-                     relation: Optional[Relation],
-                     tail: Optional[Entity]):
+                     head: Optional[Entity] = None,
+                     relation: Optional[Relation] = None,
+                     tail: Optional[Entity] = None):
         results: Set[Fact] = set()
         for fact in self.facts:
             if head and not fact.head.is_like(head):
