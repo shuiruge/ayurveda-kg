@@ -1,0 +1,5 @@
+numpy<1.20.0
+tensorflow<2.8.0
+tensorflow-hub
+tensorflow-text
+scikit-learn

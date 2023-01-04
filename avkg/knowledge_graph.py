@@ -3,56 +3,85 @@ import os
 from collections import defaultdict
 from typing import Dict, Optional, Set, Union
 
+import numpy as np
+import tensorflow as tf
+import tensorflow_hub as hub
+from sklearn.metrics.pairwise import cosine_similarity
+# Shall not delete even though not employed:
+from tensorflow_text import SentencepieceTokenizer
 
-class Entity:
+# The 16-language multilingual module is the default but feel free
+# to pick others from the list and compare the results.
+USE_MODEL_URL = 'https://tfhub.dev/google/universal-sentence-encoder-multilingual/3' #@param ['https://tfhub.dev/google/universal-sentence-encoder-multilingual/3', 'https://tfhub.dev/google/universal-sentence-encoder-multilingual-large/3']  # noqa:E501
+USE_MODEL = hub.load(USE_MODEL_URL)
 
-    def __init__(self, name: str):
-        self.name = name
 
-    def __eq__(self, other):
-        return self.name == other.name
+def embed_text(input: str):
+    assert isinstance(input, str)
+    vector: np.ndarray = USE_MODEL(input)[0, :]
+    return vector
 
-    def __hash__(self):
-        return hash(self.name)
 
-    def __repr__(self):
-        return f'{self.name}'
+def get_similarity(vector: np.ndarray,
+                   other_vector: np.ndarray) -> float:
+    cosine = cosine_similarity(
+        tf.reshape(vector, (1, -1)),
+        tf.reshape(other_vector, (1, -1)),
+    )[0, 0]
+    if cosine > 1:
+        cosine = 1
+    elif cosine < -1:
+        cosine = -1
+    return 1 - np.arccos(cosine) / np.pi
 
-    def __str__(self):
-        return self.name
+
+class EmbeddedText:
+
+    SIMILARITY_THRESHOLD = 0.9  # default value.
+
+    def __init__(self, content: str):
+        self._content = content
+        self._vector = embed_text(self.content)
+
+    @property
+    def content(self):
+        return self._content
+
+    @property
+    def vector(self):
+        return self._vector
 
     def is_like(self, other):
-        # TODO: Temporal implementation without NLP.
-        if isinstance(other, Entity):
-            return self.name == other.name
-        else:
-            return self.name == other
-
-
-class Relation:
-
-    def __init__(self, name: str):
-        self.name = name
+        similarity = get_similarity(self.vector, other.vector)
+        return similarity > EmbeddedText.SIMILARITY_THRESHOLD
 
     def __eq__(self, other):
-        return self.name == other.name
+        return self.content == other.content
 
     def __hash__(self):
-        return hash(self.name)
+        return hash(self.content)
 
     def __repr__(self):
-        return self.name
+        return f'''
+        Embedded text:
+            content: {self.content}
+            vector: {self.vector}
+        '''
 
     def __str__(self):
-        return self.name
+        return self.content
 
-    def is_like(self, other):
-        # TODO: Temporal implementation without NLP.
-        if isinstance(other, Entity):
-            return self.name == other.name
-        else:
-            return self.name == other
 
+class Entity(EmbeddedText):
+
+    def __repr__(self):
+        return f'{self.content}'
+
+
+class Relation(EmbeddedText):
+
+    def __repr__(self):
+        return f'-- {self.content} -->'
 
 
 class Fact:
@@ -74,7 +103,7 @@ class Fact:
         self.tail = tail
 
     def __repr__(self):
-        return f'{repr(self.head)} -- {repr(self.relation)} --> {repr(self.tail)}'
+        return f'{repr(self.head)} {repr(self.relation)} {repr(self.tail)}'
 
 
 class KnowledgeGraph:
@@ -90,7 +119,7 @@ class KnowledgeGraph:
     1. [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](https://arxiv.org/abs/2002.00388v4).
     """
 
-    SUBCATEGORY_RELATION = 'is of'
+    SUBCATEGORY_RELATION = Relation('is of')
 
     def __init__(self):
         self._entities: Set[Entity] = set()
@@ -187,7 +216,7 @@ class KnowledgeGraph:
 
         objects: Set[Entity] = set()
         for fact in self.get_facts_by_tail(category):
-            if fact.relation.is_like(KnowledgeGraph.SUBCATEGORY_RELATION):
+            if fact.relation == KnowledgeGraph.SUBCATEGORY_RELATION:
                 objects.update(self.get_objects(fact.head))
         if not objects:
             return set([category])
